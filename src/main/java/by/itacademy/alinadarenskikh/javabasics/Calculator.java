@@ -28,6 +28,8 @@ public class Calculator {
                     result = (double) a / b;
                     break;
                 }
+            default:
+                System.out.println("Неподдерживаемый оператор. Используйте: +, -, *, /");
         }
         System.out.println(result);
     }
