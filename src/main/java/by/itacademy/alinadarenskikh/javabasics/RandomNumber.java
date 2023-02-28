@@ -13,8 +13,8 @@ public class RandomNumber {
         Random random = new Random();
 
         int min = (int) Math.pow(10, number - 1);
-        int max = (int) Math.pow(10, number - 1);
+        int max = (int) Math.pow(10, number) - 1;
 
-        return random.nextInt((max - min) + 1, min);
+        return random.nextInt(min, max);
     }
 }
